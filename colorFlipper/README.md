@@ -32,7 +32,7 @@ Dive into a colorful experience with Color Flipper! A simple yet captivating app
 
 ## Contribute 🤝
 
-Feel free to dive in! [Open an issue](https://github.com/ibilalkayy/colorFlipper/issues) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/ibilalkayy/JavaScript-Projects/issues) or submit PRs.
 
 ## License 🔖
 
