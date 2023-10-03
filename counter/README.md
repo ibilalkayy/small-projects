@@ -1,5 +1,10 @@
 # JavaScript Counter: A Simple Yet Powerful Tool ⚙️
 
+<p align="center">
+  <img src="app.png" alt="Application Image">
+</p>
+
+
 Welcome to the **JavaScript Counter** project. Built with pure JavaScript, this tool serves as a brilliant demonstration of how simple concepts can come together to create something useful and interactive. Delve in to understand the magic behind the counter!
 
 ## 📖 Table of Contents
