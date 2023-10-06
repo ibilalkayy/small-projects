@@ -1,42 +1,66 @@
 body {
     margin: 0;
+    background-color: rgb(195, 243, 247);
 }
 
-header {
-    margin: auto;
-    width: 50%;
-}
-
-header h1 {
-    font-size: 50px;
-    font-family: Arial;
-    text-align: center;
-    color: darkblue;
-    display: block;
-    margin: auto;
-    padding-top: 70px;
-    padding-bottom: 30px;
-}
-
-header img {
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    width: 30%;
-}
-
-header h3 {
+.title {
     font-size: 30px;
     font-family: Arial;
     text-align: center;
-    color: darkcyan
+    color: darkcyan;
+    padding: 30px;
 }
 
-header p {
+.review {
+    background-color: white;
+    display: flex; /* changed from inline-flex */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;  /* optional: rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* optional: shadow effect */
+    max-width: 40%;  /* or any desired maximum width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container img {
+    padding: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 25%;   
+}
+
+#author {
+    margin-top: -15px;
     text-align: center;
     font-family: Arial;
+    font-size: 20px;
 }
 
-#susan-profession, #john-profession, #andrew-profession {
-    color:cadetblue
+#job {
+    margin-top: -15px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    color: rgb(87, 229, 241);
+}
+
+#info {
+    margin-top: -5px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    border: none;
+    font-size: 25px;
+    background-color: white;
+    color: rgb(135, 237, 247);
 }
