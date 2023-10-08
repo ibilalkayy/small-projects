@@ -1,9 +1,9 @@
-# JavaScript-Projects 💻
+# Small-Projects 💻
 
-Welcome to the **JavaScript-Projects** repository! This is a collection of different JavaScript projects I've been working on. If you love JavaScript as much as I do, you'll definitely find these projects interesting! 🚀
+Welcome to the **Small-Projects** repository! This is a collection of different small projects I've been working on. If you love small as much as I do, you'll definitely find these projects interesting! 🚀
 
 ## 📎 Repository Link
-[JavaScript-Projects on GitHub](https://github.com/ibilalkayy/JavaScript-Projects)
+[Small-Projects on GitHub](https://github.com/ibilalkayy/Small-Projects)
 
 ## 📌 Table of Contents
 1. [Introduction](#introduction)
@@ -14,7 +14,7 @@ Welcome to the **JavaScript-Projects** repository! This is a collection of diffe
 
 ## 📘 Introduction
 
-This repository contains various projects showcasing the power and flexibility of JavaScript. Whether you're a beginner looking to learn, or an expert searching for some inspiration, there's something here for everyone.
+This repository contains various projects showcasing the power and flexibility of different technologies. Whether you're a beginner looking to learn, or an expert searching for some inspiration, there's something here for everyone.
 
 ## 📂 Projects
 
@@ -22,6 +22,8 @@ Here are some of the highlighted projects in this repository:
 
 - **colorFlipper**: It changes the background color with the press of a button..
 - **counter**: It increases and decreases the numbers and reset it also.
+- **carousel**: It contains the carousel code.
+- **navbar**: It contains the navigation bar code.
 
 Feel free to explore each directory for a detailed README on each project.
 
@@ -29,9 +31,9 @@ Feel free to explore each directory for a detailed README on each project.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ibilalkayy/JavaScript-Projects.git
+   git clone https://github.com/ibilalkayy/Small-Projects.git
 
-   cd JavaScript-Projects/Name-Of-Project
+   cd Small-Projects/Name-Of-Project
 
 2. Follow the individual README.md inside the project directory for further instructions.
 
@@ -54,5 +56,5 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ## 💌 Contact
 
-Feel free to reach out if you have any questions, or just want to chat about JavaScript! 👋
+Feel free to reach out if you have any questions, or just want to chat about different projects! 👋
 
