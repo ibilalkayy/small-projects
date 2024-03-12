@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Ensure git is installed
+      become: yes
+      apt:
+        name: git
+        state: present
+    
+    - name: Clone a repository
+      git:
+        repo: 'link of the github repo'
+        dest: 'path of the directory in which you want to clone it'
