@@ -1,9 +1,9 @@
-# Small-Projects 💻
+# small-projects 💻
 
-Welcome to the **Small-Projects** repository! This is a collection of different small projects I've been working on. If you love small as much as I do, you'll definitely find these projects interesting! 🚀
+Welcome to the **small-projects** repository! This is a collection of different small projects I've been working on. If you love small as much as I do, you'll definitely find these projects interesting! 🚀
 
 ## 📎 Repository Link
-[Small-Projects on GitHub](https://github.com/ibilalkayy/Small-Projects)
+[small-projects on GitHub](https://github.com/ibilalkayy/small-projects)
 
 ## 📌 Table of Contents
 1. [Introduction](#introduction)
@@ -31,9 +31,9 @@ Feel free to explore each directory for a detailed README on each project.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ibilalkayy/Small-Projects.git
+   git clone https://github.com/ibilalkayy/small-projects.git
 
-   cd Small-Projects/Name-Of-Project
+   cd small-projects/Name-Of-Project
 
 2. Follow the individual README.md inside the project directory for further instructions.
 
