@@ -1,15 +1,12 @@
 package usecases
 
-import (
-	"github.com/ibilalkayy/small-projects/task-clean/entities"
-	"github.com/ibilalkayy/small-projects/task-clean/repositories"
-)
+import "github.com/ibilalkayy/small-projects/task-clean/entities"
 
-type AddTaskUseCase struct {
-	TaskRepository repositories.TaskRepository
-}
-
-func (uc *AddTaskUseCase) Execute(title string) {
-	task := entities.Task{ID: 1, Title: title, IsComplete: false}
-	uc.TaskRepository.AddTask(task)
+func AddTask(title, description string) *entities.Task {
+	adding := entities.Task{
+		Title:       title,
+		Description: description,
+		Completed:   false,
+	}
+	return &adding
 }

@@ -1,6 +1,45 @@
-# Task Management Application
+# Task Management System
 
-This is a simple task management application built using the Clean Architecture principles. It allows users to add tasks and list all tasks.
+This is a simple command-line task management system written in Go. Users can add tasks, mark tasks as completed, and view all tasks.
+
+## Features
+
+- **Add Task**: Users can add a new task with a title and description.
+- **Mark Task as Completed**: Users can mark a task as completed.
+- **View Tasks**: Users can view all tasks along with their details.
+
+## File Structure
+
+The application follows the principles of Clean Architecture, which promotes separation of concerns and modularity. Here's the file structure:
+
+```
+task_manager/
+    |- entities/
+    |   |- task.go
+    |- usecases/
+    |   |- add_task.go
+    |   |- complete_task.go
+    |   |- view_tasks.go
+    |- interfaces/
+    |   |- cli/
+    |       |- main.go
+```
+
+### Entities
+
+The `entities` package contains the core data structure of the application. In this case, it defines the `Task` entity, which has properties like title, description, and completion status.
+
+### Use Cases
+
+The `usecases` package contains the business logic of the application. Each use case represents a specific action that the user can perform. For example:
+- `add_task.go`: Implements the logic for adding a new task.
+- `complete_task.go`: Implements the logic for marking a task as completed.
+- `view_tasks.go`: Implements the logic for viewing all tasks.
+
+### Interfaces
+
+The `interfaces` package contains the interface adapters, which are responsible for interacting with the outside world. In this case, it provides a command-line interface (CLI) for users to interact with the application.
+- `cli`: Contains the main entry point of the application, where users can interact with the task management system through the command line.
 
 ## Getting Started
 
@@ -25,17 +64,3 @@ To run the application, follow these steps:
     ```bash
     go run main.go
     ```
-
-## File Structure
-
-The application follows a simple file structure:
-
-- **entities**: Contains the definition of the core data structure (`Task`).
-- **usecases**: Contains the application-specific business logic or Use Cases (`AddTaskUseCase`, `ListTasksUseCase`).
-- **repositories**: Contains the interfaces and concrete implementations for interacting with data (`TaskRepository`, `InMemoryTaskRepository`).
-- **main.go**: Entry point of the application.
-
-## Features
-
-- **Add Task**: Users can add tasks to the task list.
-- **List Tasks**: Users can view all tasks in the task list.
