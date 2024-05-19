@@ -3,10 +3,10 @@ package client
 import (
 	"fmt"
 
-	"github.com/ibilalkayy/small-projects/todo-clean/rpc/server"
+	"github.com/ibilalkayy/small-projects/todo-clean/rpc/network"
 )
 
-func OrderFood() {
-	fmt.Println("Client: Ordering Rice")
-	server.HandleOrder("Rice")
+func PlacedAnOrder() {
+	fmt.Println("Client: Rice is ordered")
+	network.HandleTask("Rice")
 }

@@ -1,22 +1,16 @@
 package procedure
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func Received() {
-	fmt.Println("Procedure: Task is received to be completed")
+func FromServer() {
+	fmt.Println("Procedure: The order is received from the server")
 }
 
 func MakingRice() {
-	fmt.Println("Procedure: Making Rice and it is now ready")
+	fmt.Println("Procedure: Cooking the rice and now it is ready")
 }
 
-func HandleTask(task string) {
-	if task == "Rice" {
-		Received()
-		MakingRice()
-	} else {
-		fmt.Println("Procedure: Unknown task")
-	}
+func HandleProcedure() {
+	FromServer()
+	MakingRice()
 }
