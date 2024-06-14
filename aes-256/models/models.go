@@ -2,31 +2,33 @@ package models
 
 import (
 	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 type User struct {
-	ID           uint   `gorm:"primaryKey"`
-	Username     string `gorm:"unique;not null"`
-	Email        string `gorm:"unique;not null"`
-	PasswordHash string `gorm:"not null"`
-	CreatedAt    time.Time
-	UpdatedAt    time.Time
+	ID           primitive.ObjectID `bson:"_id,omitempty"`
+	Username     string             `bson:"username"`
+	Email        string             `bson:"email"`
+	PasswordHash string             `bson:"password_hash"`
+	CreatedAt    time.Time          `bson:"created_at"`
+	UpdatedAt    time.Time          `bson:"updated_at"`
 }
 
 type EncryptedData struct {
-	ID            uint `gorm:"primaryKey"`
-	UserID        uint `gorm:"not null"`
-	Plaintext     string
-	Ciphertext    string `gorm:"not null"`
-	EncryptionKey string `gorm:"not null"`
-	CreatedAt     time.Time
-	UpdatedAt     time.Time
+	ID            primitive.ObjectID `bson:"_id,omitempty"`
+	UserID        primitive.ObjectID `bson:"user_id"`
+	Plaintext     string             `bson:"plaintext"`
+	Ciphertext    string             `bson:"ciphertext"`
+	EncryptionKey string             `bson:"encryption_key"`
+	CreatedAt     time.Time          `bson:"created_at"`
+	UpdatedAt     time.Time          `bson:"updated_at"`
 }
 
-type DecryptionData struct {
-	ID              uint `gorm:"primaryKey"`
-	UserID          uint `gorm:"not null"`
-	EncryptedDataID uint `gorm:"not null"`
-	DecryptedText   string
-	CreatedAt       time.Time
+type DecryptionLog struct {
+	ID              primitive.ObjectID `bson:"_id,omitempty"`
+	UserID          primitive.ObjectID `bson:"user_id"`
+	EncryptedDataID primitive.ObjectID `bson:"encrypted_data_id"`
+	DecryptedText   string             `bson:"decrypted_text"`
+	CreatedAt       time.Time          `bson:"created_at"`
 }

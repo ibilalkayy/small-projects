@@ -1,17 +1,18 @@
 package database
 
 import (
-	"fmt"
+	"context"
 	"log"
 	"os"
+	"time"
 
-	"github.com/ibilalkayy/small-projects/aes-256/models"
 	"github.com/joho/godotenv"
-	"gorm.io/driver/postgres"
-	"gorm.io/gorm"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var DB *gorm.DB
+var Client *mongo.Client
+var DB *mongo.Database
 
 func Connect() {
 	err := godotenv.Load()
@@ -19,19 +20,26 @@ func Connect() {
 		log.Fatalf("Error loading .env file")
 	}
 
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=UTC",
-		os.Getenv("DB_HOST"),
-		os.Getenv("DB_USER"),
-		os.Getenv("DB_PASSWORD"),
-		os.Getenv("DB_NAME"),
-		os.Getenv("DB_PORT"),
-	)
-	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	uri := os.Getenv("MONGO_URI")
+	dbName := os.Getenv("DB_NAME")
+
+	client, err := mongo.NewClient(options.Client().ApplyURI(uri))
 	if err != nil {
-		log.Fatalf("Error connecting to the database: %v", err)
+		log.Fatalf("Error creating MongoDB client: %v", err)
 	}
 
-	db.AutoMigrate(&models.User{}, &models.EncryptedData{}, &models.DecryptionData{})
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 
-	DB = db
+	err = client.Connect(ctx)
+	if err != nil {
+		log.Fatalf("Error connecting to MongoDB: %v", err)
+	}
+
+	Client = client
+	DB = client.Database(dbName)
+}
+
+func GetCollection(collectionName string) *mongo.Collection {
+	return DB.Collection(collectionName)
 }
