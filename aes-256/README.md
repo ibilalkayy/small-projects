@@ -26,6 +26,7 @@ aes_encryption_project/
 ├── models/
 │   └── models.go
 ├── .env
+├── .gitignore
 ├── go.mod
 ├── go.sum
 └── main.go
