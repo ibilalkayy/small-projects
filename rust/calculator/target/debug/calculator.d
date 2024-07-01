@@ -1,0 +1,1 @@
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/calculator/target/debug/calculator: /home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/calculator/src/main.rs
