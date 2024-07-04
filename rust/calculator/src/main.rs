@@ -2,7 +2,22 @@ use std::io;
 
 fn add(num1:i32, num2:i32) {
     let result:i32 = num1 + num2;
-    println!("Here is the result: {}", result);
+    println!("Here is the addition result:{}", result);
+}
+
+fn subtract(num1:i32, num2:i32) {
+    let result:i32 = num1 - num2;
+    println!("Here is the subtraction result: {}", result);
+}
+
+fn multiply(num1:i32, num2:i32) {
+    let result:i32 = num1 * num2;
+    println!("Here is the multiplcation result: {}", result);
+}
+
+fn divide(num1:i32, num2:i32) {
+    let result:i32 = num1 / num2;
+    println!("Here is the division result: {}", result);
 }
 
 fn take_input()-> (i32, i32) {
@@ -21,4 +36,7 @@ fn take_input()-> (i32, i32) {
 fn main() {
     let (num1, num2) = take_input();
     add(num1, num2);
+    subtract(num1, num2);
+    multiply(num1, num2);
+    divide(num1, num2);
 }
