@@ -1,0 +1,1 @@
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/word_finder/target/debug/word_finder: /home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/word_finder/src/main.rs
