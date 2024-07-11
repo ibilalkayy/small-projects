@@ -1,0 +1,10 @@
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/libversion_check-f6c915e7ec1bc6a0.rmeta: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/version.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/channel.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/date.rs
+
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/libversion_check-f6c915e7ec1bc6a0.rlib: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/version.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/channel.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/date.rs
+
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/version_check-f6c915e7ec1bc6a0.d: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/version.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/channel.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/date.rs
+
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/lib.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/version.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/channel.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/version_check-0.9.4/src/date.rs:

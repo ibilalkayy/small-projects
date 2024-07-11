@@ -1,0 +1,1 @@
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/workspace: /home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/src/main.rs

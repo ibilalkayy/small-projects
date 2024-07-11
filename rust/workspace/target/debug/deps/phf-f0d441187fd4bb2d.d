@@ -1,0 +1,11 @@
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/libphf-f0d441187fd4bb2d.rmeta: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_set.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/set.rs
+
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/libphf-f0d441187fd4bb2d.rlib: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_set.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/set.rs
+
+/home/ibilalkayy/Documents/Projects/go/src/github.com/ibilalkayy/small-projects/rust/workspace/target/debug/deps/phf-f0d441187fd4bb2d.d: /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/lib.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_map.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_set.rs /home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/set.rs
+
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/lib.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/map.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_map.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/ordered_set.rs:
+/home/ibilalkayy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/phf-0.11.2/src/set.rs:
