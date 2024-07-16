@@ -2,6 +2,8 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
+use crate::components::parent_child::parent_child_home::ParentChildHome;
+
 #[component]
 pub fn Container(children: Children) -> impl IntoView {
     view! {
@@ -35,6 +37,9 @@ pub fn Navbar() -> impl IntoView {
                 <li class="menu-item">
                     <a href="/"> Home </a>
                 </li>
+                <li class="menu-item">
+                    <a href="parent-child"> Parent Child </a> 
+                </li>
             </ul>
         </nav>
     }
@@ -54,7 +59,10 @@ pub fn Content() -> impl IntoView {
             <main id="content">
                 <Routes>
                     <Route path="" view=HomePage/>
-                    <Route path="/*any" view=NotFound/>
+                    <Route path="/parent-child" view=ParentChildHome>
+                        <Route path="" view=|| view! { <p> "Click an example link! "</p> }/>
+                    </Route>
+                    <Route path="/any" view=NotFound/>
                 </Routes>
             </main>
         </Router>
