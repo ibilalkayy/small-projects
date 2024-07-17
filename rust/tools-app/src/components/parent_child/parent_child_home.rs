@@ -9,6 +9,9 @@ pub fn ParentChildHome() -> impl IntoView {
                 <li>
                     <a href="/parent-child/write-signal"> "Write Signal" </a>
                 </li>
+                <li>
+                   <a href="/parent-child/callback"> "Callback" </a>
+                </li>
             </ul>
             <Outlet/>
         </div>

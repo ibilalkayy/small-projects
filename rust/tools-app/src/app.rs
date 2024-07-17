@@ -4,6 +4,7 @@ use leptos_router::*;
 
 use crate::components::parent_child::{
     parent_child_home::ParentChildHome, parent_child_write_signal::Parent as ParentChildWriteSignal,
+    parent_child_callback::Parent as ParentChildCallback,
 };
 
 #[component]
@@ -62,7 +63,8 @@ pub fn Content() -> impl IntoView {
                 <Routes>
                     <Route path="" view=HomePage/>
                     <Route path="/parent-child" view=ParentChildHome>
-                        <Route path="write-signal" view=ParentChildWriteSignal />                    
+                        <Route path="write-signal" view=ParentChildWriteSignal />    
+                        <Route path="callback" view=ParentChildCallback />                
                         <Route path="" view=|| view! { <p> "Click an example link!" </p> }/>
                     </Route>
                     <Route path="/any" view=NotFound/>
