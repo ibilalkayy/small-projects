@@ -36,7 +36,7 @@ fn view_data() -> Result <(), Error> {
 
         println!("Name: {}, description: {}", name, description);
     }
-    Ok(())
+   Ok(())
 }
 
 fn update_data() -> Result <(), Error> {
