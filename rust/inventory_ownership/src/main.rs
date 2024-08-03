@@ -1,98 +1,98 @@
-use std::collections::HashMap;
 use std::io::{self, Write};
+use std::collections::HashMap;
 
 struct Item {
     _name: String,
-    _quantity: u32,
+    _quantity: u8,
 }
 
-struct Inventory {
-    _items: HashMap<String, Item>,
+struct Collection {
+    _items: HashMap<String, Item>
 }
 
-impl Inventory {
+impl Collection {
     fn new() -> Self {
-        Inventory {
+        Collection {
             _items: HashMap::new(),
         }
     }
 
-    fn add_item(&mut self, name: &str, quantity: u32) {
-        let _item = Item {
+    fn add_item(&mut self, name: &str, quantity: u8) {
+        let item = Item {
             _name: name.to_string(),
             _quantity: quantity,
         };
         
-        self._items.insert(name.to_string(), _item);
-        println!("Added Item name: {} & quantity: {}", name, quantity);
+        self._items.insert(name.to_string(), item);
+        println!("Added an item: {} and quantity: {}", name, quantity);
     }
 
-    fn update_item(&mut self, name: &str, quantity: u32) {
+    fn update_item(&mut self, name: &str, quantity: u8) {
         if let Some(item) = self._items.get_mut(name) {
             item._quantity = quantity;
-            println!("Updated item: {} with quantity: {}", name, quantity);
+            println!("Updated item: {} and quantity: {}", name, quantity);
         } else {
-            println!("Updated item {} not found", name);
-        } 
+            println!("No item in the collection");
+        }
     }
 
-    fn list_items(&self) {
+    fn list_item(&self) {
         if self._items.is_empty() {
-            println!("No items in inventory");
+            println!("There is not item present");
         } else {
             for item in self._items.values() {
-                println!("Item name: {}, Item Quantity: {}", item._name, item._quantity);
+                println!("Added item: {} and quantity: {}", item._name, item._quantity);
             }
         }
     }
 }
 
-fn enter_input() -> (String, u32) {
-    print!("Enter item name: ");
-    io::stdout().flush().expect("Failed to flush stdout");
-    
-    let mut name = String::new();
-    io::stdin().read_line(&mut name).expect("Failed to read line");
-    let name = name.trim();
+fn enter_choice() -> (String, u8) {
+    print!("Enter an item name: ");
+    io::stdout().flush().expect("failed to flush the stdout");
 
-    print!("Enter quantity: ");
-    io::stdout().flush().expect("Failed to flush stdout");
+    let mut take_name: String = String::new();
+    io::stdin().read_line(&mut take_name).expect("failed to read the line");
+    let name: &str = take_name.trim();
 
-    let mut quantity = String::new();
-    io::stdin().read_line(&mut quantity).expect("Failed to read line");
-    let quantity: u32 = quantity.trim().parse().expect("Please enter a valid number");
+    print!("Enter your quantity: ");
+    io::stdout().flush().expect("failed to flush tghe stdout");
+
+    let mut take_quantity: String = String::new();
+    io::stdin().read_line(&mut take_quantity).expect("failed to read the line");
+    let quantity: u8 = take_quantity.trim().parse().expect("failed to convert to int");
 
     return (name.to_string(), quantity);
 }
 
 fn main() {
-    let mut inventory = Inventory::new();
-
+    let mut collection = Collection::new();
     loop {
-        println!("\n1. Add an item");
+        println!("1. Add an item");
         println!("2. Update an item");
-        println!("3. View all items");
+        println!("3. List an item");
         println!("4. Exit");
 
-        print!("Select your choice [1, 2, 3, 4]: ");
-        io::stdout().flush().expect("Failed to flush stdout");
+        print!("Enter your choice: ");
+        io::stdout().flush().expect("failed to flush the stdout");
 
-        let mut choice = String::new();
-        io::stdin().read_line(&mut choice).expect("Failed to read line");
-        let choice: u8 = choice.trim().parse().expect("Please enter a valid number");
+        let mut take_input: String = String::new();
+        io::stdin().read_line(&mut take_input).expect("failed to read the line");
+        
+        let choice: u8 = take_input.trim().parse().expect("failed to convert to int");
 
         match choice {
-            1 => {
-                let (name, quantity) = enter_input();
-                inventory.add_item(&name, quantity);
+            1=>{
+                let (name, quantity) = enter_choice();
+                collection.add_item(&name, quantity);
             },
-            2 => {
-                let (name, quantity) = enter_input();
-                inventory.update_item(&name, quantity);
+            2=>{
+                let (name, quantity) = enter_choice();
+                collection.update_item(&name, quantity);
             },
-            3 => inventory.list_items(),
-            4 => break,
-            _ => println!("Invalid choice. Please select a valid option."),
+            3=>collection.list_item(),
+            4=>break,
+            _=>println!("failed to recognize the choice"),
         }
     }
 }
