@@ -1,0 +1,11 @@
+genrule(
+	name = "example_target",
+	srcs = [
+
+		"//files:fast.txt",
+		"//files:correct.txt",
+		"//files:choose.txt",
+	],
+	outs = ["example.txt"],
+	cmd = "cat $(SRCS) > $@",
+)
