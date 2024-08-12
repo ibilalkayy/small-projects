@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX Radio Example</title>
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+</head>
+<body>
+    <h1>Choose an Action</h1>
+    <form id="actionForm" hx-post="/redirect" hx-target="body" hx-swap="innerHTML" hx-push-url="true">
+        <label>
+            <input type="radio" name="action" value="create" checked>
+            Create
+        </label>
+        <label>
+            <input type="radio" name="action" value="update">
+            Update
+        </label>
+        <button type="submit">Enter</button>
+    </form>
+</body>
+</html>
+
